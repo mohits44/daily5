@@ -1,1 +1,18 @@
+# def swap(x,y):  need to think about this
+#     temp = x
+#     x = y
+#     y = temp
+def bubbleSort(a,n):
+    temp=0
+    for i in range(0,n-1):   #one less 
+        for j in range(0,n-1): #out of range ni hojaye
+            if a[j+1]<a[j]:
+                temp=a[j+1]
+                a[j+1]=a[j]
+                a[j]=temp
+                
+    return a
+arr=[5,6,3,2,7]
+size=len(arr)
 
+print(bubbleSort(arr,size))
